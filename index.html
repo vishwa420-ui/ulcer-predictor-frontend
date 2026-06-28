@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ulcer Risk Predictor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <i class="fa-solid fa-heart-pulse"></i>
+            AI Ulcer Predictor
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Prediction</a>
+            <a href="#">About</a>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                AI Powered<br>
+                Ulcer Risk Prediction
+            </h1>
+
+            <p>
+                Predict ulcer risk using Machine Learning.
+                Enter patient details and symptoms to receive
+                an instant risk assessment.
+            </p>
+
+        </div>
+
+    </section>
+
+    <main class="container">
+
+        <!-- Patient Information -->
+
+        <div class="card">
+
+            <h2>
+                <i class="fa-solid fa-user"></i>
+                Patient Information
+            </h2>
+
+            <div class="grid">
+
+                <div class="input-group">
+
+                    <label>Gender</label>
+
+                    <select id="gender">
+                        <option>Female</option>
+                        <option>Male</option>
+                    </select>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Age Group</label>
+
+                    <select id="age_group">
+                        <option>Teen(13-19)</option>
+                        <option>Young Adult(20-39)</option>
+                        <option>Middle Age(40-59)</option>
+                        <option>Senior(60+)</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Symptoms -->
+
+        <div class="card">
+
+            <h2>
+                <i class="fa-solid fa-stethoscope"></i>
+                Symptoms
+            </h2>
+
+            <div class="symptoms">
+
+                <label><input type="checkbox" id="burning_pain"> Burning Pain</label>
+
+                <label><input type="checkbox" id="pain_empty_stomach"> Pain On Empty Stomach</label>
+
+                <label><input type="checkbox" id="pain_after_eating"> Pain After Eating</label>
+
+                <label><input type="checkbox" id="night_pain"> Night Pain</label>
+
+                <label><input type="checkbox" id="bloating"> Bloating</label>
+
+                <label><input type="checkbox" id="nausea"> Nausea</label>
+
+                <label><input type="checkbox" id="heartburn"> Heartburn</label>
+
+                <label><input type="checkbox" id="chest_pain"> Chest Pain</label>
+
+                <label><input type="checkbox" id="swallowing_difficulty"> Swallowing Difficulty</label>
+
+                <label><input type="checkbox" id="appetite_loss"> Loss Of Appetite</label>
+
+                <label><input type="checkbox" id="black_stool"> Black Stool</label>
+
+                <label><input type="checkbox" id="vomiting_blood"> Vomiting Blood</label>
+
+                <label><input type="checkbox" id="stress"> Stress</label>
+
+                <label><input type="checkbox" id="nsaid_use"> NSAID Usage</label>
+
+                <label><input type="checkbox" id="h_pylori"> H. Pylori Infection</label>
+
+            </div>
+
+        </div>
+
+        <div class="predict-area">
+
+            <button id="predictBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Predict Risk
+            </button>
+
+        </div>
+
+        <!-- Result -->
+
+        <div class="card result-card">
+
+            <h2>
+                Prediction Result
+            </h2>
+
+            <div class="circle">
+
+                <span id="riskValue">
+                    0%
+                </span>
+
+            </div>
+
+            <div class="progress">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+            <h3 id="riskLevel">
+                Waiting...
+            </h3>
+
+            <div class="info-box">
+
+                <h4>Possible Ulcer Type</h4>
+
+                <p id="ulcerType">
+                    -
+                </p>
+
+            </div>
+
+            <div class="info-box">
+
+                <h4>Health Suggestions</h4>
+
+                <ul id="suggestions">
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        © 2026 AI Ulcer Risk Prediction System
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
