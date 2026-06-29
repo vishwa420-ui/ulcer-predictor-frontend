@@ -1,4 +1,4 @@
-const API_URL = "https://ulcer-predictor-backend.vercel.app/";
+const API_URL = "https://ulcer-predictor-backend.vercel.app/predict";
 
 const predictBtn = document.getElementById("predictBtn");
 
